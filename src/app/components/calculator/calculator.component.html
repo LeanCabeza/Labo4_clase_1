@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Calculadora de Promedio y Suma de Edades</h2>
+  <form>
+    <label for="edadUno">Edad Uno:</label>
+    <input type="number" class="form-control" id="edadUno" [(ngModel)]="edadUno" name="edadUno">
+    <label for="edadDos">Edad Dos:</label>
+    <input type="number" class="form-control" id="edadDos" [(ngModel)]="edadDos" name="edadDos">
+    <button class="btn btn-primary mt-3" (click)="calcular()">Calcular</button>
+    <button class="btn btn-secondary mt-3 ms-4" (click)="limpiar()">Limpiar Cuadros de Texto</button>
+  </form>
+  <div  style="margin-top: 20px;" class="alert alert-info" *ngIf="promedio !== 0 || suma !== 0">
+    <h4 class="alert-heading">Resultado:</h4>
+    <p>Promedio: {{ promedio }}</p>
+    <p>Suma: {{ suma }}</p>
+  </div>
+</div>

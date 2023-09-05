@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="colm-logo">
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Logo">
+    <h2>Bienvenido a la pagina principal del login clase 1</h2>
+  </div>
+  <div class="colm-form">
+    <div class="form-container">
+      <input type="text" placeholder="Usuario" [(ngModel)]="dataUser.user" name="user">
+      <input type="password" placeholder="Contraseña" [(ngModel)]="dataUser.pass" name="pass">
+      <button class="btn-login" (click)="login()">Login</button>
+      <a>Olvidaste tu contra?</a>
+    </div>
+  </div>
+</div>
