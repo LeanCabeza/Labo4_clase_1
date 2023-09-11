@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     BienvenidoComponent,
     ErrorComponent,
     LoginComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

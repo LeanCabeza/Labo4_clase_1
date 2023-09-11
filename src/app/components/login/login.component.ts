@@ -13,16 +13,14 @@ export class LoginComponent implements OnInit {
     "user": "",
     "pass": ""
   };
-  usuarios:Array<User> = [
-    {
-      id: "1",
-      user: 'test',
-      pass: 'test'
-    }
-  ];
-  
-  
+
+  usuarios: Array<User> = [];
+
   constructor() {
+    const usuariosLocalStorage = localStorage.getItem('users');
+    if (usuariosLocalStorage) {
+      this.usuarios = JSON.parse(usuariosLocalStorage);
+    }
    }
 
   ngOnInit() {

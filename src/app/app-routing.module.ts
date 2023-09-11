@@ -4,6 +4,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
 import { LoginComponent } from './components/login/login.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   {path:'',component: BienvenidoComponent},
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path:'login',component: LoginComponent},
   {path:'error',component: ErrorComponent},
   {path:'calculator',component: CalculatorComponent},
+  {path:'register',component: RegisterComponent},
   {path:'**',component: ErrorComponent},
 ];
 
